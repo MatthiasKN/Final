@@ -56,6 +56,14 @@ h5 {
     margin-bottom: auto;
 }
 
+h6 {
+    font-size: 1.3em;
+    font-weight: 100;
+    text-align: center;
+    margin: auto;
+    color: red;
+}
+
 hr {
     border-color: #DC143C; 
     background-color: #DC143C;
@@ -83,8 +91,15 @@ hr {
     margin-bottom: 20px;
     margin-right: 0 auto;
     margin-left: 0 auto;
-    padding-left: auto;
-    padding-left: auto;
+}
+
+.animation-container {
+    background-color: lightgrey;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 0 auto;
+    margin-left: 0 auto;
+    text-align: center;
 }
 
 .trump-container {
@@ -94,7 +109,8 @@ hr {
     padding-right: auto;
     background-color: grey;
     display: inline-block;
-    width: 100%;
+    width: 30%;
+    text-align: center;
 }
 
 .clinton-container {
@@ -104,7 +120,8 @@ hr {
     padding-right: auto;
     background-color: grey;
     display: inline-block;
-    width: 100%;
+    width: 30%;
+    text-align: center;
 }
 
 .chart-container {
@@ -140,11 +157,11 @@ hr {
     position: absolute;
     overflow: hidden;
     top: 0;
-    left: 0
+    left: 0;
 }
 .view img {
     display: block;
-    position: relative
+    position: relative;
 }
 .view h2 {
     text-transform: uppercase;

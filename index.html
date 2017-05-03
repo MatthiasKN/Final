@@ -10,6 +10,15 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
    
   </head>
+
+  <script>
+  function pictureChange()
+    {
+      document.getElementById('theImage').src="img/election2016";
+    }
+  </script>
+
+
   <body>
 
     <div class="container title-container">
@@ -34,24 +43,27 @@
       <h4>The 2016 US Presidential Election marked a turning point in American politics. For the first time, a political outsider was elected to the nation's highest office. Donald Trump's surprise victory over Hillary Clinton shocked people across the political spectrum for both its unprecedentedness and improbability. Donald Trump's lack of political experience, inflamatory rhetoric, and nearly continuous scandals had led many pundits to declare that Hillary Clinton would easily triumph. After his upset victory, experts began to investigate Trump voters and why they voted for him. Common explanations cite a decline in manufacturing employment, increasing economic inequality, immigration concerns, and nationalism as reasons for Trump's victory.Trump's campaign slogan "Make America Great Again" has come to stand for many of these ideas, at least in the minds of his supporters.</h4>
     </div>
 
-    <div class="container img-container">
+    <br>
+
+    <div class= "container animation-container">
       <div class="container trump-container">
                 <div class="view view-fifth">
-                    <img src="img/Donald Trump.jpg" />
+                    <img src="img/Donald Trump.jpg" width="300px" height="200px"/>
                     <div class="mask">
-                        <img src="img/make america great again.jpg">
+                        <img src="img/make america great again.jpg" width="300px" height="200px" >
                     </div>
                 </div>
       </div>
       <div class="container clinton-container">
                 <div class="view view-fifth">
-                    <img src="img/hillary clinton.jpg" />
+                    <img src="img/hillary clinton.jpg" width="300px" height="200px" />
                     <div class="mask">
-                        <img src="img/stronger together.jpg">
+                        <img src="img/stronger together.jpg" width="300px" height="200px">
                     </div>
                 </div>
       </div>
     </div>
+   
 
     <br>
 
@@ -65,14 +77,25 @@
     </div>
 
     <div class="container img-container">
-     <img class="bioImage" src="img/atlantic_1950_chart.PNG"> 
+     <img class="bioImage" src="img/greatest decade chart.jpg"> 
     </div>
+
+    <br>
+
+    <div class="container">
+      <h6>People think the 1950s, 1980s, and 1990s were good...</h6>
+    </div>
+
+    <br>
 
     <hr>
 
+    <br>
+
     <div class="container">
-      <h2>Were Things Better in 1950?</h2>
+      <h2>But Were Things Better in 1950?</h2>
     </div>
+
     <div class="container img-container">
         <h2>Big Timeline Here - data without population</h2>
     </div>
@@ -82,6 +105,8 @@
 
     <div class="container img-container">
         <h2>2nd Big Timeline Here - data with population</h2>
+        <img class="bioImage" src="img/election2016.jpg">
+        <p><input type="button" id="theButton" value="click me!" onclick="pictureChange()"></p>
     </div>
 
     <div class="container img-container">
