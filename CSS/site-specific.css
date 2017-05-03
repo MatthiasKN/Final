@@ -1,41 +1,52 @@
 body{
-    font-family: 'Roboto Condensed', helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #222;
+    background-color: white;
 }
 
-div.title{
-    width: 100%;
-    height: 100%;
+h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background: -webkit-linear-gradient(red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-h1{
-  color: #000000;
+h2 {
+    font-weight: 200;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h3 {
     font-weight: 400;
-    font-size: 2.5em;
-    max-width: 800px;
-    text-align: left;
-    margin: 25px, 25px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
+    font-size: 0.75rem;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
-h2{
-    text-align: left;
-}
-
-h3{
-  font-size: 1.25em;
-    font-weight: 300;
+h4 {
+    font-size: 0.85em;
+    font-weight: 100;
     max-width: 800px;
     text-align: left;
     margin-top: 5px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 25%;
+    margin-left: 25%;
     margin-bottom: auto;
 }
 
-h4{
-  font-size: 0.85em;
+h5 {
+    font-size: 0.45em;
     font-weight: 100;
     max-width: 800px;
     text-align: left;
@@ -45,15 +56,157 @@ h4{
     margin-bottom: auto;
 }
 
-h5{
-  font-size: 0.45em;
-    font-weight: 100;
-    max-width: 800px;
-    text-align: left;
-    margin-top: 5px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: auto;
+hr {
+    border-color: #DC143C; 
+    background-color: #DC143C;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-style: inset;
+    border-width: 1px;
+}
+
+.container {
+    width: 100%;
+}
+
+.title-container {
+    width: 100%;
+    background color: lightgrey
+}
+
+.img-container {
+    background-color: lightgrey;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 0 auto;
+    margin-left: 0 auto;
+    padding-left: auto;
+    padding-left: auto;
+}
+
+.trump-container {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: grey;
+    display: inline-block;
+    width: 100%;
+}
+
+.clinton-container {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: grey;
+    display: inline-block;
+    width: 100%;
+}
+
+.chart-container {
+    background-color: grey;
+    display: inline-block;
+    width: 40%;
+}
+
+.button-container {
+    display: inline-block;
+}
+
+
+.view {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+    background: #fff url(../img/Donald Trump.jpg) no-repeat center center
+}
+.view .mask, .view .content {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0
+}
+.view img {
+    display: block;
+    position: relative
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0
+}
+.view p {
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 20px;
+    text-align: center
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+
+.view-fifth img {
+    transition: all 1.5s ease-in-out; 
+}
+.view-fifth .mask { 
+    background-color: rgba(146,96,91,0.3);
+    transform: translateX(-300px);
+    opacity: 1;
+    transition: all 0.4s ease-in-out; 
+}
+.view-fifth h2{
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+    box-shadow: 0px 1px 3px rgba(159, 141, 140, 0.5);
+}
+.view-fifth p{
+    opacity: 0;
+    color: #333;
+    transition: all 0.2s linear;
+}
+
+.view-fifth:hover .mask { 
+    transform: translateX(0px);
+}                       
+
+.view-fifth:hover p{
+    opacity: 1;
+    transition-delay: 0.4s;
+}
+
+img.resize{
+   max-width:50%;
+   max-height:50%;
 }
 
 div.bio{
@@ -108,3 +261,7 @@ li.assignmentLink > a:hover{
 ul:nth-of-type(2) {
   list-style-type: circle;
 }
+
+
+
+
