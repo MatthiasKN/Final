@@ -114,7 +114,10 @@ hr {
 }
 
 .button-container {
-    display: inline-block;
+    max-height: 30%;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
