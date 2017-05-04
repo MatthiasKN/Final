@@ -52,6 +52,7 @@ h1 {
     background: -webkit-linear-gradient(red, blue);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: 'Signika', sans-serif;
 }
 
 h2 {
@@ -97,6 +98,7 @@ h6 {
     text-align: center;
     margin: auto;
     color: red;
+    font-family: 'Signika', sans-serif;
 }
 
 
@@ -104,6 +106,13 @@ h6 {
 ul.a {
     list-style-type: circle;
     margin-left: 40%;
+    color: red;
+}
+
+ul.b {
+    list-style-type: circle;
+    margin-left: 40%;
+    color: black;
 }
 
 /* line */
@@ -193,10 +202,23 @@ hr {
     background-position: 50% 50%;
 }
 
+.difference-container {
+    display: inline-block;
+    width: 100%;
+    padding-top: 0 auto;
+    margin: 0 auto;
+
+}
+
+.map-container {
+    min-height: 150%;
+    background-size: 150%r;
+}
+
 .cover {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 /* Slide Animation */
 
@@ -213,6 +235,7 @@ hr {
     cursor: default;
     background: #fff url(../img/Donald Trump.jpg) no-repeat center center
 }
+
 .view .mask, .view .content {
     width: 300px;
     height: 200px;
@@ -221,10 +244,12 @@ hr {
     top: 0;
     left: 0;
 }
+
 .view img {
     display: block;
     position: relative;
 }
+
 .view h2 {
     text-transform: uppercase;
     color: #fff;
@@ -235,6 +260,7 @@ hr {
     background: rgba(0, 0, 0, 0.8);
     margin: 20px 0 0 0
 }
+
 .view p {
     font-family: Georgia, serif;
     font-style: italic;
@@ -244,6 +270,7 @@ hr {
     padding: 10px 20px 20px;
     text-align: center
 }
+
 .view a.info {
     display: inline-block;
     text-decoration: none;
@@ -253,6 +280,7 @@ hr {
     text-transform: uppercase;
     box-shadow: 0 0 1px #000
 }
+
 .view a.info:hover {
     box-shadow: 0 0 5px #000
 }
@@ -260,12 +288,14 @@ hr {
 .view-fifth img {
     transition: all 1.5s ease-in-out; 
 }
+
 .view-fifth .mask { 
     background-color: rgba(146,96,91,0.3);
     transform: translateX(-300px);
     opacity: 1;
     transition: all 0.4s ease-in-out; 
 }
+
 .view-fifth h2{
     background: rgba(255, 255, 255, 0.5);
     color: #000;
@@ -305,6 +335,8 @@ img.bioImage{
     display: block;
     text-align: left;
 }
+
+
 
 p.bioText{
     font-weight: 300;
