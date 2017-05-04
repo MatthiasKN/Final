@@ -8,13 +8,14 @@
 
     <!-- Google fonts code -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
    
   </head>
 
   <script>
-  function pictureChange()
+    function pictureChange()
     {
-      document.getElementById('theImage').src="img/election2016";
+    document.getElementById("theImage").src="..img/counties.png";
     }
   </script>
 
@@ -33,19 +34,25 @@
 
     <br>
 
-    <div class="container button-container">
+    <div class="container election-container">
       <img class="bioImage" src="img/election2016.jpg"> 
     </div>
 
     
     <div class="container">
-      <h2>Election 2016 - Donald Trump's Victory</h2>
+      <h2>Donald Trump's Victory</h2>
       <h4>The 2016 US Presidential Election marked a turning point in American politics. For the first time, a political outsider was elected to the nation's highest office. Donald Trump's surprise victory over Hillary Clinton shocked people across the political spectrum for both its unprecedentedness and improbability. Donald Trump's lack of political experience, inflamatory rhetoric, and nearly continuous scandals had led many pundits to declare that Hillary Clinton would easily triumph. After his upset victory, experts began to investigate Trump voters and why they voted for him. Common explanations cite a decline in manufacturing employment, increasing economic inequality, immigration concerns, and nationalism as reasons for Trump's victory.Trump's campaign slogan "Make America Great Again" has come to stand for many of these ideas, at least in the minds of his supporters.</h4>
     </div>
 
     <br>
 
-    <div class= "container animation-container">
+    <div class="container">
+      <h6 class='blue'>Competing Candidates. Competing Campaign Slogans.</h6>
+    </div>
+
+    <br> 
+
+    <div id= "container">
       <div class="container trump-container">
                 <div class="view view-fifth">
                     <img src="img/Donald Trump.jpg" width="300px" height="200px"/>
@@ -70,15 +77,26 @@
     <hr>
 
     <br>
+    <br>
 
     <div class="container">
-      <h2>What Does'Great Again!' Mean?</h2>
+      <h2>What Does'Great Again!' Actually Mean To Voters?</h2>
       <h4>To Trump's supporters, the phrase "Make American Great Again!" encapsulates the idea that America has declined from its peak and that with the right leadership, it could again become a dominant world power where citizens could expect substantial increases in quality of life. To Trump opponents, the phrase conotes the racism and sexism of America's past. Trump himself has stated that in his mind, America was great "after World War 1 and in the 1950's". Survey results suggest that most voters view either the 1950's or the 1980's as American's 'Greatest' period.</h4>
     </div>
 
+    <
+
     <div class="container img-container">
-     <img class="bioImage" src="img/greatest decade chart.jpg"> 
+     <img class="bioImage" src="img/greatest decade chart.jpg" width="200%" height="200%"> 
     </div>
+
+    <br>
+
+    <div id="container">
+      <h5>Source: The Atlantic</h5>
+    </div>
+
+    <br>
 
     <br>
 
@@ -87,38 +105,83 @@
     </div>
 
     <br>
+    <br>
 
     <hr>
 
     <br>
+    <br>
 
     <div class="container">
-      <h2>But Were Things Better in 1950?</h2>
+      <h2>But Was The US Better?</h2>
+    </div>
+
+    <div clas="container">
+      <h6>Let's Look At Some Data</h6>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+      <h4>If America was in fact better in the 1950s, 80s, or 90s, it makes sense to investigate the changes that have taken places in areas that were highly supportive of Trump in the election. Election results are typically spatially presented at the county level and this piece focuses on the 5 most 'Pro-Trump' counties. For comparison's sake, the 5 most 'Pro-Clinton' coumties are also analysed. Demographic and economic data from the past 60 years provides a high level insight into how these places have changed since 1950.</h4>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+      <h2>In each candidate's top 5 most supportive counties...</h2>
     </div>
 
     <div class="container img-container">
-        <h2>Big Timeline Here - data without population</h2>
+      INSERT MAP
     </div>
 
     <div class="container">
-        <h4> It's difficult to draw firm conclusions from the counties analysed above. The most pro-Trump counties are rural and have very low populations while the most pro-Clinton counties are typically in urban areas with much higher populations. There's such a huge disparity between these types of places that it makes more sense to look at the most populous counties that voted overwelmingly for Trump or Clinton to get a better idea of how changes have affected greater numbers of people.</h4>
+      <h2>We can see how they've changed since 1950 according to the following</h2><h2 class="red">metrics:</h2>
+      <ul class="a">
+          <li>Population Density</li>
+          <li>Unemployment Rate</li>
+          <li>Average Family Income</li>
+          <li>Population Percentage with Some College Education</li>
+      </ul>
+    </div>
 
-    <div class="container img-container">
-        <h2>2nd Big Timeline Here - data with population</h2>
-        <img class="bioImage" src="img/election2016.jpg">
-        <p><input type="button" id="theButton" value="click me!" onclick="pictureChange()"></p>
+    <img src="img/timeline1.png" class="cover"/>
+
+    <div class="container">
+      <h2>But these counties are vastly different places</h2>
+
     </div>
 
     <div class="container img-container">
-        <h2>Subtimeline 1 - unemployment</h2>
+      INSERT GRAPHIC ON DIFFERENCE IN POP. BETWEEN COUNTIES
+    </div>
+
+    <div class="container">
+      <h2>Let's look only at the most populous places that voted heavily for each candidate</h2>
     </div>
 
     <div class="container img-container">
-        <h2>Subtimeline 2 - income</h2>
+      <img src="img/timeline1.png" class="cover"/>
+    </div>
+
+    <img id="theImage" src="../img/lskjdlfksjdlf">
+    <p><input type="button" id="theButton" value="" onclick="pictureChange()"></p>
+    
+    
+
+    <div class="container img-container">
+      <h2>Subtimeline 1 - unemployment</h2>
     </div>
 
     <div class="container img-container">
-        <h2>Subtimeline 3 - college education</h2>
+      <h2>Subtimeline 2 - income</h2>
+    </div>
+
+    <div class="container img-container">
+      <h2>Subtimeline 3 - college education</h2>
     </div>
 
     <hr>
