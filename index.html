@@ -12,14 +12,6 @@
    
   </head>
 
-  <script>
-    function pictureChange()
-    {
-    document.getElementById("theImage").src="..img/counties.png";
-    }
-  </script>
-
-
   <body>
 
     <div class="container title-container">
@@ -134,8 +126,13 @@
     </div>
 
     <div class="container map-container"> 
-      <img src="img/First Map.jpg" width="100%" height="100%">
+      <img src="img/First Map.jpg" width="80%" height="80%">
     </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
 
     <div class="container">
       <h2>We can see how they've changed since 1950 according to the following metrics:</h2>
@@ -149,7 +146,13 @@
 
     <hr> 
 
-    <img src="img/pop-01.png" class="cover"/>
+    <br>
+
+    <div class="container">
+      <img src="img/pop-03.png" class="cover"/>
+    </div>
+
+    <br>
 
     <hr>
 
@@ -175,6 +178,9 @@
 
     <br>
     <br>
+    <br>
+    <br>
+
 
     <div class="container">
       <h2>Instead, let's look only at the most populous places that voted heavily for each candidate</h2>
@@ -184,19 +190,33 @@
     <br>
     <br>
 
-    <div class="container map-container">
-      <img src="img/Second Map.jpg" class="bioImage"/>
+    <div class="container map-container"> 
+      <img src="img/Second Map.jpg" width="80%" height="80%">
     </div>
 
     <br>
     <br>
     <div class="container">
      <h2>These counties provide a picture of how change has affected a wider swathe of the population</h2>
+     <h6>*There's still a big population difference though</h6>
     </div>
+
+    <hr>
+
+    <script>
+          function pictureChange()
+          {
+          document.getElementById('theImage').src="../img/Second Map.jpg";
+          }
+    </script>
+    <p><input type="button" id="theButton" value="Highest Population Counties" onclick="pictureChange()"></p>
+    <img id="theImage" src="../img/First Map.jpg">
 
     <div class="container">
       <img src="img/vote-01.png" class="cover"/>
     </div>
+
+    <hr>
 
     <div class="container">
       <h2>Let's compare each metric more closely</h2>
@@ -204,21 +224,7 @@
     
     <div class="container img-container">
       <h2>Pop. Density</h2>
-      <img src="img/unemployment.png" class="bioImage">
-    </div>
-
-    <div class="container img-container">
-      <h2>Unemployment</h2>
-      <img src="img/unemployment.png" class="bioImage">
-    </div>
-
-    <div class="container img-container">
-      <h2>Income</h2>
-      <img src="img/unemployment.png" class="bioImage">
-    </div>
-
-    <div class="container img-container">
-      <h2>Education</h2>
+      <h6></h6>
       <img src="img/unemployment.png" class="bioImage">
     </div>
 
@@ -226,6 +232,27 @@
 
     <div class="container">
       <h2>Conclusions</h2>
+      <ul class="a">
+          <li>America is becoming more crowded</li>
+          <li>Average incomes are increasing</li>
+          <li>People are more educated</li>
+          <li>Unemployment has grown</li>
+      </ul>
     </div>
+
+    <br>
+    <br>
+
+    <h2>Does this really mean that it was great in the past?</h2>
+
+    <div class="container">
+      <h4>In general, America appears to have improved from 1950 till 2015. In fact, these 5 pro-Trump counties have improved more in terms of , relative to pro-Hilary counties, because they all had a lower starting point than pro-Hilary counties. 
+
+      Pro-Trump counties have a higher level of education and on average, a lower rate of unemployment rate. A striking difference between the two sets of counties is their population densities, which are much higher for pro-Hilary counties, indicating that the rural-urban divide is very real. Based on the data above, it seems that contrary to an Trump’s campaign slogan, America is at its greatest now, and is doing better than it was in the 1950s, ‘80s, or 90’s. 
+
+      With regards to the 2016 presidential election, this analysis does not provide conclusive evidence for the ideas behind the slogan ‘Make America Great Again!’. Perhaps, in his campaign, the President tapped into something that the data analysed here cannot explain. Deeper or more psycho-analytic research is needed to explain the widespread popularity of his slogan, and ultimately, his election victory. 
+      </h4>
+    </div>
+
   </body>
 </html>

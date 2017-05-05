@@ -211,8 +211,7 @@ hr {
 }
 
 .map-container {
-    min-height: 150%;
-    background-size: 150%r;
+    text-align: center;
 }
 
 .cover {
